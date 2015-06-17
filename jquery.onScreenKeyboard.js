@@ -161,7 +161,7 @@
 			if ($key.hasClass('osk-backspace')) {
 				inputValue = $input.val();
 				$input.val(inputValue.substr(0, inputValue.length - 1));
-				$input.trigger('keyup');
+				$input.focus().trigger('keyup');
 				return false;
 			}
 
